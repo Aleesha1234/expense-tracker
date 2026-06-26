@@ -1,121 +1,76 @@
-# 💰 Personal Expense Tracker
+# Personal Expense Tracker
 
-A clean, modern Personal Expense Tracker built with **Python**, **Streamlit**, **Pandas**, and **Plotly**.  
-All data is stored locally in a CSV file — no database required.
+A modern and user-friendly Expense Tracker built with **Python**, **Streamlit**, **Pandas**, and **CSV**. This application helps users manage their income and expenses, track financial records, and visualize spending through interactive charts.
 
 ---
 
 ## Features
 
-| Feature | Details |
-|---|---|
-| 📊 Dashboard | KPI cards (Income, Expenses, Balance) + monthly overview chart |
-| ➕ Add Transaction | Income or Expense with category, date, amount, description |
-| 📋 View Transactions | Sort, search by keyword, filter by type and category, delete rows |
-| 📈 Charts | Expense pie chart by category + monthly bar charts |
-| 💾 Export | Download full transaction history as a timestamped CSV file |
+- Add Income & Expenses
+- View All Transactions
+- Search Transactions
+- Filter by Category
+- Sort by Date
+- Delete Transactions
+- Expense Charts
+- Export Data to CSV
+- CSV-based storage (No Database Required)
 
 ---
 
-## Project Structure
+## Tech Stack
 
-```
-expense-tracker/
-│── app.py               # Streamlit app — all pages and UI
-│── utils.py             # Data access helpers (load, save, filter, charts)
-│── requirements.txt     # Python dependencies
-│── README.md            # This file
-│── data/
-│   └── expenses.csv     # Auto-created on first run
-```
+- Python
+- Streamlit
+- Pandas
+- Matplotlib
+- CSV
 
 ---
 
-## Requirements
 
-- Python **3.10** or higher
-- pip
 
----
-
-## Installation & Running (Windows — VS Code / Command Prompt)
-
-### 1. Open a terminal in the project folder
-
-In VS Code: **Terminal → New Terminal**, then make sure you are inside `expense-tracker/`.
+## ⚙️ Installation
 
 ```bash
+git clone https://github.com/Aleesha1234/expense-tracker.git
 cd expense-tracker
-```
 
-### 2. (Recommended) Create a virtual environment
-
-```bash
-python -m venv venv
-venv\Scripts\activate
-```
-
-### 3. Install dependencies
-
-```bash
 pip install -r requirements.txt
-```
-
-### 4. Run the app
-
-```bash
-streamlit run app.py
-```
-
-The app will open automatically in your default browser at `http://localhost:8501`.
-
----
-
-## Installation & Running (macOS / Linux)
-
-```bash
-cd expense-tracker
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-streamlit run app.py
+python -m streamlit run app.py
 ```
 
 ---
 
-## Data Storage
+## Screenshots
 
-All transactions are saved to `data/expenses.csv` automatically.  
-The file is created on the first run — no setup required.
+### Dashboard
 
-**CSV columns:**
+![Dashboard 1](screenshots/dashboard1.png)
 
-| Column | Type | Description |
-|---|---|---|
-| id | integer | Auto-incremented unique ID |
-| date | YYYY-MM-DD | Transaction date |
-| type | Income / Expense | Transaction type |
-| category | string | Category label |
-| amount | float | Amount in Rupees |
-| description | string | Optional free-text note |
+![Dashboard 2](screenshots/dashboard2.png)
 
----
+![Dashboard 3](screenshots/dashboard3.png)
 
-## Dependencies
+### Add Transaction
 
-| Package | Version | Purpose |
-|---|---|---|
-| streamlit | ≥ 1.32 | Web UI framework |
-| pandas | ≥ 2.0 | CSV data manipulation |
-| plotly | ≥ 5.18 | Interactive charts |
+![Add Transaction](screenshots/addtransaction.png)
 
----
+### Records
 
-## Stopping the App
+![Records](screenshots/records.png)
 
-Press **Ctrl + C** in the terminal to stop the Streamlit server.  
-To deactivate the virtual environment:
+### Charts
 
-```bash
-deactivate
-```
+![Charts](screenshots/charts.png)
+
+### Export
+
+![Export](screenshots/export.png)
+
+
+## Author
+
+**Aleesha Tariq**
+
+GitHub: https://github.com/Aleesha1234
