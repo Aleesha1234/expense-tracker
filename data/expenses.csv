@@ -1,0 +1,5 @@
+id,date,type,category,amount,description
+1,2026-06-27,Expense,Food,2500.0,pizza + coke
+2,2026-06-27,Expense,Education,100.0,
+3,2026-06-27,Expense,Food,60000.0,uni fees
+4,2026-06-27,Expense,Transport,2000.0,travel to lhr
